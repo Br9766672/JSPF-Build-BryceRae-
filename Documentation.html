@@ -14,6 +14,8 @@
 
         <div class="container-fluid">
           <ul class="navbar-nav">
+            <a class="navbar-brand">Documentation </a>
+            <div class="vr" style="height: auto;"></div>
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
@@ -40,10 +42,89 @@
         </div>
     </nav>
     
-    <h1> Documentation</h1> 
+    <h1 style="text-align: center;"> Documentation for Element 5</h1> 
     <hr>
+    <h2> What is in Element 5 </h2>
+    
+    <p> Element 5 is made up of two different scenes a Light world that is made to look like beach and a dark world that is a dark void that only contains death.</p>
+    <h3> Shared Features </h3>
+    <p> In both scenes there is a aninmated player character that can move around scene and interact with physics objects scattered about.
+    </p>
+    <p> Both scenes also include a sky box to help with the theme of each location. 
+        Along with camera constraints to prevent users form looking past the skybox or in the case of the light world. Under the scene map.</p>
+    <h3>Light world</h3>
+    <p>In the light world the plamtrees are sprites that are randomly placed across the sand texured ground to create the illusion of being on a tropical island.</p>
+    <p> The scene also has a sphere made to look like a beach ball that the player can roll around, and to prevent the ball form falling off the map. There are invisible boxes acting as walls to prevent the sphere from falling.
+    </p>
+    <img src="./images/Element 5 capture.PNG" style="width: 50%;">
+    <h3>Dark World </h3>
+    <p>In the dark scene the ground has been made invisible to make it look more like you are in an empty void.
+      The ground is still functional however so the skulls with physics don't all just immediately fall and disappear   
+    </p>
+    <img src="./images/Element 5 capture 2.PNG" style="width: 60%;">
+    <hr>
+    <h2>File Breakdown</h2>
+    <p>The code has three main files one is the index file. And the two Bablyon scene files.</p>
+    <h3>Index </h3>
+    <p> The index file is responsable for importing and intitalisng all of the other nesscssary files and pulgins for the scenes to work.
+        It is also the file that links all these files together and allows them to communicate with each other, 
+        and futhermore allows the scenes to be displayed on a webpage.  
+    </p>
+    <p>The index in element 5 is also responsable for managing the changing between the two scenes. </p>
+    <h2> Scene Files</h2>
+    <p> The scene files are where all of the code for how the scene should look are, and is what actually creates the 3D scenes and how they function</p>
+    <p> each scene file can be broken down into 3 main sections:</p>
+    <ol style="font-weight: bold;">
+      <li>Importing</li>
+      <li>Functions</li>
+      <li>Rendering</li>
+    </ol>
+    <h4> Importing</h4>
+    <p>The importing section is all about importing all your depedencies for your code to work like classes,libraries,and pulgins including Bablyon itself. </p>
+    <h4>Functions</h4>
+    <p> This is section is where the bulk of the code is and is about creating functions to create your scene. </p>
+    <p> In this section you create functions on how to:</p>
+    <ul>
+      <li>Create or import meshes</li>
+      <li>Applying textures/materials </li>
+      <li>Sprites</li>
+      <li>Animations</li>
+      <li>Player input </li>
+      <li>Lighting and shadows</li>
+    </ul>
+    <h4>Rendering</h4>
+    <p> After you have finished with creating the functions, 
+      you now move onto the last step of making the scene rendering </p>
+    <p>In rendering you know use all of the functions to create the scene itself, this is done by tweaking the input values of your functions.</p>
+    <p> As an example if you created a function that made a box and allowed the position of the box to be assigned, 
+        you could then in the rendering phase change the position vaules of the box to precisely place the box anywhere you want in the scene 
+    </p>
+    <hr>
+    <h2>Assets and Sources</h2>
+    <p> most of the assets used for element 5 were taken from Babylon's own asset library with a few others taken form different sources. 
+        All assets and their sources are listed down below. </p>
+    <h3> Babylon Assets </h3>
+    <p>these are all assets that were taken from the Babylon own asset library</p>
+    <a href = "https://doc.babylonjs.com/toolsAndResources/assetLibraries">  
+     <img src=".\images\babylonjs.png" alt="link to assetLibraries" style="width: 50%;">
+    </a>
+    <h4> Models</h4>
+    <ol>
+      <li>dummy3.babylon</li>
+      <li>skull.babylon</li>
+    </ol>
+    <h4> Textures </h4>
+    <ol>
+      <li>palmtree.png</li>
+      <li>sand.jpg</li>
 
-    <p> </p>
+    </ol>
+    <h3> other sources </h3>
+    <p> these are the assets used that were not from Babylon </p>
+    <ol>
+      <li><a href="https://forum.unity.com/threads/beach-ball.297539/">beachball.jpg(Texture)</a></li>
+      <li><a href="https://freesound.org/people/Vilkas_Sound/sounds/707039/">button-click.mp3(Audio)</a></li>
 
+    </ol>
     
 </html>
